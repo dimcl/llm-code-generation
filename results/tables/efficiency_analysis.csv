@@ -1,0 +1,5 @@
+Modello,Pass Rate (%),Costo/Successo ($),Score Efficienza,Problemi Risolti,Costo Totale ($)
+GEMINI,70.0,0.000736,95.2,210,0.1545
+GPT,78.0,0.000174,447.9,234,0.0408
+QWEN,13.0,0.000684,19.0,39,0.0267
+LLAMA,63.0,0.000041,1545.7,189,0.0077

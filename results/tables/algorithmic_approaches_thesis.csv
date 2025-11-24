@@ -1,0 +1,5 @@
+Modello,Totale Analizzati,Iterativo Esplicito (%),Funzionale/Conciso (%),Ricorsivo (%)
+GPT,234,32.1,26.9,20.9
+GEMINI,210,40.0,11.4,43.8
+LLAMA,189,34.9,29.6,18.0
+QWEN,39,30.8,30.8,5.1

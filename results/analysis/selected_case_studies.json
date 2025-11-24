@@ -1,0 +1,90 @@
+{
+  "generated_at": "2025-10-31T17:00:00",
+  "total_selected": 6,
+  "selection_criteria": [
+    "Copertura difficoltà: 2 easy + 2-3 medium + 2-3 hard",
+    "Performance diverse tra modelli (alta variance)",
+    "Successi universali e fallimenti totali",
+    "Problemi che evidenziano forze/debolezze specifiche"
+  ],
+  "case_studies": [
+    {
+      "problem_id": "humaneval_010",
+      "difficulty": "easy",
+      "category": "math",
+      "title": "humaneval_010",
+      "reason": "Successo universale (mean=95.0%) - Mostra che problema è effettivamente facile",
+      "pass_rates": {
+        "gpt": 100.0,
+        "gemini": 100.0,
+        "llama": 100.0,
+        "qwen": 80.0
+      }
+    },
+    {
+      "problem_id": "humaneval_005",
+      "difficulty": "easy",
+      "category": "lists",
+      "title": "humaneval_005",
+      "reason": "Evidenzia limite Qwen su problema easy (variance=1875.0)",
+      "pass_rates": {
+        "gpt": 100.0,
+        "gemini": 100.0,
+        "llama": 100.0,
+        "qwen": 0.0
+      }
+    },
+    {
+      "problem_id": "humaneval_020",
+      "difficulty": "medium",
+      "category": "strings",
+      "title": "humaneval_020",
+      "reason": "Massima divergenza modelli (variance=2500.0) - Confronto approcci",
+      "pass_rates": {
+        "gpt": 100.0,
+        "gemini": 0.0,
+        "llama": 100.0,
+        "qwen": 0.0
+      }
+    },
+    {
+      "problem_id": "humaneval_055",
+      "difficulty": "hard",
+      "category": "algorithms",
+      "title": "humaneval_055",
+      "reason": "GPT domina (GPT=100.0% vs altri ≤40%) - Mostra superiorità",
+      "pass_rates": {
+        "gpt": 100.0,
+        "gemini": 0.0,
+        "llama": 0.0,
+        "qwen": 0.0
+      }
+    },
+    {
+      "problem_id": "humaneval_049",
+      "difficulty": "hard",
+      "category": "lists",
+      "title": "humaneval_049",
+      "reason": "Vari modelli riescono (variance=2500.0) - Confronto approcci hard",
+      "pass_rates": {
+        "gpt": 100.0,
+        "gemini": 100.0,
+        "llama": 0.0,
+        "qwen": 0.0
+      }
+    },
+    {
+      "problem_id": "humaneval_053",
+      "difficulty": "hard",
+      "category": "math",
+      "title": "humaneval_053",
+      "reason": "Fallimento universale (mean=0.0%) - Limite attuale LLM",
+      "pass_rates": {
+        "gpt": 0.0,
+        "gemini": 0.0,
+        "llama": 0.0,
+        "qwen": 0.0
+      }
+    }
+  ]
+}

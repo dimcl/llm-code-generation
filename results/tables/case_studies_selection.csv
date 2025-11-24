@@ -1,0 +1,7 @@
+Problem ID,Difficulty,Category,GPT (%),Gemini (%),Llama (%),Qwen (%),Reason
+humaneval_010,Easy,Math,100,100,100,80,Successo universale (mean=95.0%) - Mostra che problema Ã¨ effettivamente facile
+humaneval_005,Easy,Lists,100,100,100,0,Evidenzia limite Qwen su problema easy (variance=1875.0)
+humaneval_020,Medium,Strings,100,0,100,0,Massima divergenza modelli (variance=2500.0) - Confronto approcci
+humaneval_055,Hard,Algorithms,100,0,0,0,GPT domina (GPT=100.0% vs altri â‰¤40%) - Mostra superioritÃ 
+humaneval_049,Hard,Lists,100,100,0,0,Vari modelli riescono (variance=2500.0) - Confronto approcci hard
+humaneval_053,Hard,Math,0,0,0,0,Fallimento universale (mean=0.0%) - Limite attuale LLM

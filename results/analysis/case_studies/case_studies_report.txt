@@ -1,0 +1,363 @@
+
+================================================================================
+CASE STUDY: Successo universale (mean=95.0%) - Mostra che problema è effettivamente facile
+================================================================================
+
+Difficulty: easy
+Category: math
+
+PROBLEM DESCRIPTION:
+from typing import List, Optional
+
+
+def longest(strings: List[str]) -> Optional[str]:
+    """ Out of list of strings, return the longest one. Return the first one in case of multiple
+    strings of the same length. Return None in case the input list is empty.
+    >>> longest([])
+
+    >>> longest(['a', 'b', 'c'])
+    'a'
+    >>> longest(['a', 'bb', 'ccc'])
+    'ccc'
+    """
+...
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+
+
+GPT     :
+  Pass Rate: 100.0% (5/5)
+  First Success: Attempt #1
+  Avg Tokens: 298
+  Avg Latency: 3.31s
+  ✅ Success on attempt #1
+  Code: 17 lines, 612 chars
+
+GEMINI  :
+  Pass Rate: 100.0% (5/5)
+  First Success: Attempt #1
+  Avg Tokens: 271
+  Avg Latency: 18.02s
+  ✅ Success on attempt #1
+  Code: 17 lines, 572 chars
+
+LLAMA   :
+  Pass Rate: 100.0% (5/5)
+  First Success: Attempt #1
+  Avg Tokens: 292
+  Avg Latency: 0.29s
+  ✅ Success on attempt #1
+  Code: 14 lines, 507 chars
+
+QWEN    :
+  Pass Rate: 80.0% (4/5)
+  First Success: Attempt #1
+  Avg Tokens: 913
+  Avg Latency: 2.67s
+  ✅ Success on attempt #1
+  Code: 5 lines, 157 chars
+
+
+
+================================================================================
+CASE STUDY: Evidenzia limite Qwen su problema easy (variance=1875.0)
+================================================================================
+
+Difficulty: easy
+Category: lists
+
+PROBLEM DESCRIPTION:
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """ Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """
+...
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+
+
+GPT     :
+  Pass Rate: 100.0% (5/5)
+  First Success: Attempt #1
+  Avg Tokens: 337
+  Avg Latency: 2.02s
+  ✅ Success on attempt #1
+  Code: 14 lines, 501 chars
+
+GEMINI  :
+  Pass Rate: 100.0% (5/5)
+  First Success: Attempt #1
+  Avg Tokens: 248
+  Avg Latency: 0.91s
+  ✅ Success on attempt #1
+  Code: 14 lines, 495 chars
+
+LLAMA   :
+  Pass Rate: 100.0% (5/5)
+  First Success: Attempt #1
+  Avg Tokens: 365
+  Avg Latency: 0.35s
+  ✅ Success on attempt #1
+  Code: 17 lines, 678 chars
+
+QWEN    :
+  Pass Rate: 0.0% (0/5)
+  First Success: None
+
+  Avg Tokens: 1209
+  Avg Latency: 2.99s
+  ❌ Failed: syntax_error
+
+
+
+================================================================================
+CASE STUDY: Massima divergenza modelli (variance=2500.0) - Confronto approcci
+================================================================================
+
+Difficulty: medium
+Category: strings
+
+PROBLEM DESCRIPTION:
+
+
+def encode_cyclic(s: str):
+    """
+    returns encoded string by cycling groups of three characters.
+    """
+    # split string to groups. Each of length 3.
+    groups = [s[(3 * i):min((3 * i + 3), len(s))] for i in range((len(s) + 2) // 3)]
+    # cycle elements in each group. Unless group has fewer elements than 3.
+    groups = [(group[1:] + group[0]) if len(group) == 3 else group for group in groups]
+    return "".join(groups)
+
+
+def decode_cyclic(s: str):
+    """
+    takes as input string en...
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+
+
+GPT     :
+  Pass Rate: 100.0% (5/5)
+  First Success: Attempt #1
+  Avg Tokens: 466
+  Avg Latency: 3.52s
+  ✅ Success on attempt #1
+  Code: 19 lines, 874 chars
+
+GEMINI  :
+  Pass Rate: 0.0% (0/5)
+  First Success: None
+
+  Avg Tokens: 260
+  Avg Latency: 0.80s
+  ❌ Failed: name_error
+
+LLAMA   :
+  Pass Rate: 100.0% (5/5)
+  First Success: Attempt #1
+  Avg Tokens: 485
+  Avg Latency: 0.43s
+  ✅ Success on attempt #1
+  Code: 18 lines, 878 chars
+
+QWEN    :
+  Pass Rate: 0.0% (0/5)
+  First Success: None
+
+  Avg Tokens: 1243
+  Avg Latency: 3.58s
+  ❌ Failed: syntax_error
+
+
+
+================================================================================
+CASE STUDY: GPT domina (GPT=100.0% vs altri ≤40%) - Mostra superiorità
+================================================================================
+
+Difficulty: hard
+Category: algorithms
+
+PROBLEM DESCRIPTION:
+
+def minPath(grid, k):
+    """
+    Given a grid with N rows and N columns (N >= 2) and a positive integer k, 
+    each cell of the grid contains a value. Every integer in the range [1, N * N]
+    inclusive appears exactly once on the cells of the grid.
+
+    You have to find the minimum path of length k in the grid. You can start
+    from any cell, and in each step you can move to any of the neighbor cells,
+    in other words, you can go to cells which share an edge with you current
+    cell.
+   ...
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+
+
+GPT     :
+  Pass Rate: 100.0% (5/5)
+  First Success: Attempt #1
+  Avg Tokens: 687
+  Avg Latency: 4.87s
+  ✅ Success on attempt #1
+  Code: 25 lines, 945 chars
+
+GEMINI  :
+  Pass Rate: 0.0% (0/5)
+  First Success: None
+
+  Avg Tokens: 687
+  Avg Latency: 11.28s
+  ❌ Failed: syntax_error
+
+LLAMA   :
+  Pass Rate: 0.0% (0/5)
+  First Success: None
+
+  Avg Tokens: 1146
+  Avg Latency: 0.81s
+  ❌ Failed: assertion_error
+
+QWEN    :
+  Pass Rate: 0.0% (0/5)
+  First Success: None
+
+  Avg Tokens: 1480
+  Avg Latency: 2.83s
+  ❌ Failed: syntax_error
+
+
+
+================================================================================
+CASE STUDY: Vari modelli riescono (variance=2500.0) - Confronto approcci hard
+================================================================================
+
+Difficulty: hard
+Category: lists
+
+PROBLEM DESCRIPTION:
+
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
+
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
+...
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+
+
+GPT     :
+  Pass Rate: 100.0% (5/5)
+  First Success: Attempt #1
+  Avg Tokens: 407
+  Avg Latency: 2.28s
+  ✅ Success on attempt #1
+  Code: 16 lines, 614 chars
+
+GEMINI  :
+  Pass Rate: 100.0% (5/5)
+  First Success: Attempt #1
+  Avg Tokens: 305
+  Avg Latency: 5.16s
+  ✅ Success on attempt #1
+  Code: 16 lines, 612 chars
+
+LLAMA   :
+  Pass Rate: 0.0% (0/5)
+  First Success: None
+
+  Avg Tokens: 451
+  Avg Latency: 0.41s
+  ❌ Failed: assertion_error
+
+QWEN    :
+  Pass Rate: 0.0% (0/5)
+  First Success: None
+
+  Avg Tokens: 1241
+  Avg Latency: 2.60s
+  ❌ Failed: name_error
+
+
+
+================================================================================
+CASE STUDY: Fallimento universale (mean=0.0%) - Limite attuale LLM
+================================================================================
+
+Difficulty: hard
+Category: math
+
+PROBLEM DESCRIPTION:
+
+def intersection(interval1, interval2):
+    """You are given two intervals,
+    where each interval is a pair of integers. For example, interval = (start, end) = (1, 2).
+    The given intervals are closed which means that the interval (start, end)
+    includes both start and end.
+    For each given interval, it is assumed that its start is less or equal its end.
+    Your task is to determine whether the length of intersection of these two 
+    intervals is a prime number.
+    Example, the inter...
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+
+
+GPT     :
+  Pass Rate: 0.0% (0/5)
+  First Success: None
+
+  Avg Tokens: 505
+  Avg Latency: 3.88s
+  ❌ Failed: assertion_error
+
+GEMINI  :
+  Pass Rate: 0.0% (0/5)
+  First Success: None
+
+  Avg Tokens: 657
+  Avg Latency: 18.20s
+  ❌ Failed: assertion_error
+
+LLAMA   :
+  Pass Rate: 0.0% (0/5)
+  First Success: None
+
+  Avg Tokens: 606
+  Avg Latency: 0.46s
+  ❌ Failed: assertion_error
+
+QWEN    :
+  Pass Rate: 0.0% (0/5)
+  First Success: None
+
+  Avg Tokens: 1337
+  Avg Latency: 3.52s
+  ❌ Failed: syntax_error

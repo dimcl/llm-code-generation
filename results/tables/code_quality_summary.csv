@@ -1,0 +1,5 @@
+Modello,Soluzioni Analizzate,LOC Media,SLOC Media,Complessità Media,Complessità Max Media,Maintainability Index
+GPT,234,20.7,8.0,3.32,3.4,0.0
+GEMINI,210,21.2,8.7,3.60,3.6,0.0
+LLAMA,189,23.0,7.6,2.89,2.9,0.0
+QWEN,39,6.5,4.5,2.15,2.2,0.0

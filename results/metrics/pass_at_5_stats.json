@@ -1,0 +1,184 @@
+{
+  "overall": {
+    "gemini": {
+      "total_problems": 60,
+      "solved_problems": 45,
+      "pass_rate": 75.0
+    },
+    "llama": {
+      "total_problems": 60,
+      "solved_problems": 44,
+      "pass_rate": 73.3
+    },
+    "qwen": {
+      "total_problems": 60,
+      "solved_problems": 16,
+      "pass_rate": 26.7
+    },
+    "gpt": {
+      "total_problems": 60,
+      "solved_problems": 48,
+      "pass_rate": 80.0
+    }
+  },
+  "by_difficulty": {
+    "gemini": {
+      "easy": {
+        "total": 20,
+        "solved": 15,
+        "pass_rate": 75.0
+      },
+      "medium": {
+        "total": 20,
+        "solved": 15,
+        "pass_rate": 75.0
+      },
+      "hard": {
+        "total": 20,
+        "solved": 15,
+        "pass_rate": 75.0
+      }
+    },
+    "llama": {
+      "easy": {
+        "total": 20,
+        "solved": 16,
+        "pass_rate": 80.0
+      },
+      "medium": {
+        "total": 20,
+        "solved": 14,
+        "pass_rate": 70.0
+      },
+      "hard": {
+        "total": 20,
+        "solved": 14,
+        "pass_rate": 70.0
+      }
+    },
+    "qwen": {
+      "easy": {
+        "total": 20,
+        "solved": 7,
+        "pass_rate": 35.0
+      },
+      "medium": {
+        "total": 20,
+        "solved": 6,
+        "pass_rate": 30.0
+      },
+      "hard": {
+        "total": 20,
+        "solved": 3,
+        "pass_rate": 15.0
+      }
+    },
+    "gpt": {
+      "easy": {
+        "total": 20,
+        "solved": 16,
+        "pass_rate": 80.0
+      },
+      "medium": {
+        "total": 20,
+        "solved": 15,
+        "pass_rate": 75.0
+      },
+      "hard": {
+        "total": 20,
+        "solved": 17,
+        "pass_rate": 85.0
+      }
+    }
+  },
+  "by_category": {
+    "gemini": {
+      "strings": {
+        "total": 15,
+        "solved": 13,
+        "pass_rate": 86.7
+      },
+      "lists": {
+        "total": 15,
+        "solved": 14,
+        "pass_rate": 93.3
+      },
+      "math": {
+        "total": 15,
+        "solved": 14,
+        "pass_rate": 93.3
+      },
+      "algorithms": {
+        "total": 15,
+        "solved": 4,
+        "pass_rate": 26.7
+      }
+    },
+    "llama": {
+      "strings": {
+        "total": 15,
+        "solved": 13,
+        "pass_rate": 86.7
+      },
+      "lists": {
+        "total": 15,
+        "solved": 14,
+        "pass_rate": 93.3
+      },
+      "math": {
+        "total": 15,
+        "solved": 13,
+        "pass_rate": 86.7
+      },
+      "algorithms": {
+        "total": 15,
+        "solved": 4,
+        "pass_rate": 26.7
+      }
+    },
+    "qwen": {
+      "strings": {
+        "total": 15,
+        "solved": 6,
+        "pass_rate": 40.0
+      },
+      "lists": {
+        "total": 15,
+        "solved": 7,
+        "pass_rate": 46.7
+      },
+      "math": {
+        "total": 15,
+        "solved": 3,
+        "pass_rate": 20.0
+      },
+      "algorithms": {
+        "total": 15,
+        "solved": 0,
+        "pass_rate": 0.0
+      }
+    },
+    "gpt": {
+      "strings": {
+        "total": 15,
+        "solved": 15,
+        "pass_rate": 100.0
+      },
+      "lists": {
+        "total": 15,
+        "solved": 15,
+        "pass_rate": 100.0
+      },
+      "math": {
+        "total": 15,
+        "solved": 13,
+        "pass_rate": 86.7
+      },
+      "algorithms": {
+        "total": 15,
+        "solved": 5,
+        "pass_rate": 33.3
+      }
+    }
+  }
+}

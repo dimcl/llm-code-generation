@@ -1,0 +1,11 @@
+{
+  "total_cost": 0.22960766999999987,
+  "total_generations": 1200,
+  "total_successes": 672,
+  "total_tokens": 687685,
+  "total_time_seconds": 3689.5663352012634,
+  "total_time_minutes": 61.49277225335439,
+  "total_time_hours": 1.0248795375559066,
+  "avg_cost_per_generation": 0.0001913397249999999,
+  "avg_cost_per_success": 0.0003416780803571427
+}

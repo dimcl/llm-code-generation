@@ -1,0 +1,272 @@
+{
+  "generated_at": "2025-10-31T14:28:29.739125",
+  "summary": {
+    "total_generations": 1200,
+    "total_successes": 672,
+    "overall_pass_rate": 56.0,
+    "total_cost": 0.22960766999999987,
+    "total_time_minutes": 61.49277225335439
+  },
+  "models_ranking": {
+    "gpt": {
+      "rank": 1,
+      "pass_at_1": 78.3,
+      "total_cost": 0.04075214999999997,
+      "avg_complexity": 3.324786324786325,
+      "avg_loc": 20.73076923076923
+    },
+    "gemini": {
+      "rank": 2,
+      "pass_at_1": 68.3,
+      "total_cost": 0.1544597499999999,
+      "avg_complexity": 3.6023809523809525,
+      "avg_loc": 21.185714285714287
+    },
+    "llama": {
+      "rank": 3,
+      "pass_at_1": 65.0,
+      "total_cost": 0.007703340000000006,
+      "avg_complexity": 2.886243386243386,
+      "avg_loc": 22.952380952380953
+    },
+    "qwen": {
+      "rank": 4,
+      "pass_at_1": 16.7,
+      "total_cost": 0.026692429999999986,
+      "avg_complexity": 2.1538461538461537,
+      "avg_loc": 6.512820512820513
+    }
+  },
+  "pass_at_k": {
+    "pass_at_1": {
+      "gemini": {
+        "total_problems": 60,
+        "solved_problems": 41,
+        "pass_rate": 68.3
+      },
+      "llama": {
+        "total_problems": 60,
+        "solved_problems": 39,
+        "pass_rate": 65.0
+      },
+      "qwen": {
+        "total_problems": 60,
+        "solved_problems": 10,
+        "pass_rate": 16.7
+      },
+      "gpt": {
+        "total_problems": 60,
+        "solved_problems": 47,
+        "pass_rate": 78.3
+      }
+    },
+    "pass_at_3": {
+      "gemini": {
+        "total_problems": 60,
+        "solved_problems": 45,
+        "pass_rate": 75.0
+      },
+      "llama": {
+        "total_problems": 60,
+        "solved_problems": 43,
+        "pass_rate": 71.7
+      },
+      "qwen": {
+        "total_problems": 60,
+        "solved_problems": 13,
+        "pass_rate": 21.7
+      },
+      "gpt": {
+        "total_problems": 60,
+        "solved_problems": 48,
+        "pass_rate": 80.0
+      }
+    },
+    "pass_at_5": {
+      "gemini": {
+        "total_problems": 60,
+        "solved_problems": 45,
+        "pass_rate": 75.0
+      },
+      "llama": {
+        "total_problems": 60,
+        "solved_problems": 44,
+        "pass_rate": 73.3
+      },
+      "qwen": {
+        "total_problems": 60,
+        "solved_problems": 16,
+        "pass_rate": 26.7
+      },
+      "gpt": {
+        "total_problems": 60,
+        "solved_problems": 48,
+        "pass_rate": 80.0
+      }
+    }
+  },
+  "errors": {
+    "llama": {
+      "assertion_error": 57,
+      "success": 189,
+      "syntax_error": 50,
+      "index_error": 2,
+      "name_error": 1,
+      "type_error": 1
+    },
+    "qwen": {
+      "syntax_error": 253,
+      "success": 39,
+      "assertion_error": 6,
+      "name_error": 2
+    },
+    "gpt": {
+      "success": 234,
+      "assertion_error": 15,
+      "syntax_error": 50,
+      "value_error": 1
+    },
+    "gemini": {
+      "success": 210,
+      "syntax_error": 80,
+      "name_error": 5,
+      "assertion_error": 5
+    }
+  },
+  "costs": {
+    "llama": {
+      "total_generations": 300,
+      "successful_generations": 189,
+      "total_tokens": 118278,
+      "total_latency": 120.9367790222168,
+      "total_cost": 0.007703340000000006,
+      "avg_tokens": 394.26,
+      "median_tokens": 369.0,
+      "std_tokens": 145.1769963443194,
+      "avg_latency": 0.40312259674072265,
+      "median_latency": 0.37154626846313477,
+      "std_latency": 0.15270750859238255,
+      "cost_per_generation": 2.567780000000002e-05,
+      "cost_per_success": 4.0758412698412735e-05,
+      "pass_rate": 63.0
+    },
+    "qwen": {
+      "total_generations": 300,
+      "successful_generations": 39,
+      "total_tokens": 354736,
+      "total_latency": 969.8712685108185,
+      "total_cost": 0.026692429999999986,
+      "avg_tokens": 1182.4533333333334,
+      "median_tokens": 1200.0,
+      "std_tokens": 140.03633482944264,
+      "avg_latency": 3.232904228369395,
+      "median_latency": 3.479482054710388,
+      "std_latency": 0.8635097359916802,
+      "cost_per_generation": 8.897476666666661e-05,
+      "cost_per_success": 0.0006844212820512817,
+      "pass_rate": 13.0
+    },
+    "gpt": {
+      "total_generations": 300,
+      "successful_generations": 234,
+      "total_tokens": 106669,
+      "total_latency": 749.071192741394,
+      "total_cost": 0.04075214999999997,
+      "avg_tokens": 355.56333333333333,
+      "median_tokens": 336.0,
+      "std_tokens": 107.6425677735276,
+      "avg_latency": 2.496903975804647,
+      "median_latency": 2.237107276916504,
+      "std_latency": 1.1378210092709975,
+      "cost_per_generation": 0.0001358404999999999,
+      "cost_per_success": 0.00017415448717948706,
+      "pass_rate": 78.0
+    },
+    "gemini": {
+      "total_generations": 300,
+      "successful_generations": 210,
+      "total_tokens": 108002,
+      "total_latency": 1849.687094926834,
+      "total_cost": 0.1544597499999999,
+      "avg_tokens": 360.00666666666666,
+      "median_tokens": 325.0,
+      "std_tokens": 169.8386011985472,
+      "avg_latency": 6.165623649756114,
+      "median_latency": 1.2704452276229858,
+      "std_latency": 19.32765819956248,
+      "cost_per_generation": 0.000514865833333333,
+      "cost_per_success": 0.0007355226190476186,
+      "pass_rate": 70.0
+    }
+  },
+  "quality": {
+    "llama": {
+      "total_analyzed": 189,
+      "avg_loc": 22.952380952380953,
+      "median_loc": 22,
+      "std_loc": 6.473584388329757,
+      "avg_sloc": 7.619047619047619,
+      "avg_complexity": 2.886243386243386,
+      "median_complexity": 3,
+      "std_complexity": 1.5312424256073764,
+      "avg_max_complexity": 2.9047619047619047,
+      "avg_mi": 0,
+      "median_mi": 0,
+      "std_mi": 0,
+      "avg_halstead_volume": 45.33902834756345,
+      "avg_halstead_difficulty": 2.303893962085554,
+      "avg_halstead_effort": 163.04127408187875
+    },
+    "gpt": {
+      "total_analyzed": 234,
+      "avg_loc": 20.73076923076923,
+      "median_loc": 20.0,
+      "std_loc": 7.291019363178397,
+      "avg_sloc": 8.02991452991453,
+      "avg_complexity": 3.324786324786325,
+      "median_complexity": 3.0,
+      "std_complexity": 2.3700711125640237,
+      "avg_max_complexity": 3.388888888888889,
+      "avg_mi": 0,
+      "median_mi": 0,
+      "std_mi": 0,
+      "avg_halstead_volume": 52.848277422170426,
+      "avg_halstead_difficulty": 2.192367690624289,
+      "avg_halstead_effort": 222.38724334710798
+    },
+    "qwen": {
+      "total_analyzed": 39,
+      "avg_loc": 6.512820512820513,
+      "median_loc": 7,
+      "std_loc": 3.2917104406115842,
+      "avg_sloc": 4.461538461538462,
+      "avg_complexity": 2.1538461538461537,
+      "median_complexity": 2,
+      "std_complexity": 0.8441271274443497,
+      "avg_max_complexity": 2.1538461538461537,
+      "avg_mi": 0,
+      "median_mi": 0,
+      "std_mi": 0,
+      "avg_halstead_volume": 8.799216731314017,
+      "avg_halstead_difficulty": 0.7777777777777778,
+      "avg_halstead_effort": 8.917520687471571
+    },
+    "gemini": {
+      "total_analyzed": 210,
+      "avg_loc": 21.185714285714287,
+      "median_loc": 18.5,
+      "std_loc": 11.477408044518114,
+      "avg_sloc": 8.704761904761904,
+      "avg_complexity": 3.6023809523809525,
+      "median_complexity": 3.0,
+      "std_complexity": 2.4358259158770807,
+      "avg_max_complexity": 3.638095238095238,
+      "avg_mi": 0,
+      "median_mi": 0,
+      "std_mi": 0,
+      "avg_halstead_volume": 52.13629320351772,
+      "avg_halstead_difficulty": 2.3454205025257657,
+      "avg_halstead_effort": 202.68553504157896
+    }
+  }
+}

@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Environment variables (IMPORTANTE - contiene API keys!)
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific - File temporanei/debug
+check_timestamps.py
+TODO.md
+PIANO_AZIONE.md
+
+# Project specific - Analisi preliminari non necessarie
+src/data/analyze_problem_count.py
+
+# Project specific - Figure (possono essere rigenerate)
+results/figures/
+
+# Optional: Raw outputs (sono molto pesanti, ma potrebbero essere utili)
+# Se vuoi includerli per riproducibilità, commenta questa riga:
+# results/raw_outputs/

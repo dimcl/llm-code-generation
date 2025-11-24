@@ -1,0 +1,624 @@
+
+================================================================================
+QUALITATIVE ANALYSIS: humaneval_010
+================================================================================
+
+Difficulty: easy
+Category: math
+
+================================================================================
+APPROACHES COMPARISON
+================================================================================
+
+RECURSIVE: gpt, gemini
+CONDITIONAL LOGIC: llama, qwen
+
+================================================================================
+DETAILED MODEL ANALYSIS
+================================================================================
+
+GPT:
+  Status: ✅ PASSED
+  Attempt: #1
+  Approach: recursive
+  Structure:
+    - Lines of code: 17
+    - Functions: 1
+    - Loops: 1
+    - Conditionals: 2
+    - Comprehensions: 0
+    - Has docstring: True
+    - Comment lines: 0
+  Variable Naming:
+    - Total variables: 2
+    - Descriptive: 2 (100.0%)
+    - Avg length: 14.0 chars
+
+GEMINI:
+  Status: ✅ PASSED
+  Attempt: #1
+  Approach: recursive
+  Structure:
+    - Lines of code: 17
+    - Functions: 1
+    - Loops: 1
+    - Conditionals: 2
+    - Comprehensions: 0
+    - Has docstring: True
+    - Comment lines: 0
+  Variable Naming:
+    - Total variables: 2
+    - Descriptive: 2 (100.0%)
+    - Avg length: 14.0 chars
+
+LLAMA:
+  Status: ✅ PASSED
+  Attempt: #1
+  Approach: conditional logic
+  Structure:
+    - Lines of code: 14
+    - Functions: 1
+    - Loops: 0
+    - Conditionals: 2
+    - Comprehensions: 0
+    - Has docstring: True
+    - Comment lines: 0
+  Variable Naming:
+    - Total variables: 1
+    - Descriptive: 0 (0.0%)
+    - Avg length: 3.0 chars
+
+QWEN:
+  Status: ✅ PASSED
+  Attempt: #1
+  Approach: conditional logic
+  Structure:
+    - Lines of code: 5
+    - Functions: 1
+    - Loops: 0
+    - Conditionals: 1
+    - Comprehensions: 0
+    - Has docstring: False
+    - Comment lines: 0
+  Variable Naming:
+    - Total variables: 1
+    - Descriptive: 0 (0.0%)
+    - Avg length: 3.0 chars
+
+================================================================================
+INSIGHTS
+================================================================================
+
+✅ Successful approach: recursive (used by gpt, gemini, llama, qwen)
+
+Quality Ranking:
+  1. GPT: 135.0 points
+  2. GEMINI: 135.0 points
+  3. LLAMA: 125.0 points
+  4. QWEN: 120.0 points
+
+
+
+================================================================================
+QUALITATIVE ANALYSIS: humaneval_005
+================================================================================
+
+Difficulty: easy
+Category: lists
+
+================================================================================
+APPROACHES COMPARISON
+================================================================================
+
+RECURSIVE: gpt, gemini
+ITERATIVE: llama, qwen
+
+================================================================================
+DETAILED MODEL ANALYSIS
+================================================================================
+
+GPT:
+  Status: ✅ PASSED
+  Attempt: #1
+  Approach: recursive
+  Structure:
+    - Lines of code: 14
+    - Functions: 1
+    - Loops: 1
+    - Conditionals: 2
+    - Comprehensions: 0
+    - Has docstring: True
+    - Comment lines: 0
+
+GEMINI:
+  Status: ✅ PASSED
+  Attempt: #1
+  Approach: recursive
+  Structure:
+    - Lines of code: 14
+    - Functions: 1
+    - Loops: 1
+    - Conditionals: 2
+    - Comprehensions: 0
+    - Has docstring: True
+    - Comment lines: 0
+
+LLAMA:
+  Status: ✅ PASSED
+  Attempt: #1
+  Approach: iterative
+  Structure:
+    - Lines of code: 17
+    - Functions: 1
+    - Loops: 1
+    - Conditionals: 4
+    - Comprehensions: 0
+    - Has docstring: True
+    - Comment lines: 0
+
+QWEN:
+  Status: ❌ FAILED
+  Attempt: #1
+  Approach: iterative
+  Structure:
+    - Lines of code: 18
+    - Functions: 0
+    - Loops: 7
+    - Conditionals: 14
+    - Comprehensions: 0
+    - Has docstring: False
+    - Comment lines: 0
+  Error:
+    - Type: syntax_error
+    - Message: SyntaxError: unterminated string literal (detected at line 4) at line 4...
+
+================================================================================
+INSIGHTS
+================================================================================
+
+✅ Successful approach: recursive (used by gpt, gemini, llama)
+❌ Common error: syntax_error (in qwen)
+
+Quality Ranking:
+  1. GPT: 125.0 points
+  2. GEMINI: 125.0 points
+  3. LLAMA: 125.0 points
+  4. QWEN: 0.0 points
+
+
+
+================================================================================
+QUALITATIVE ANALYSIS: humaneval_020
+================================================================================
+
+Difficulty: medium
+Category: strings
+
+================================================================================
+APPROACHES COMPARISON
+================================================================================
+
+MIXED (COMPREHENSIONS + LOOPS): gpt, gemini, llama, qwen
+
+================================================================================
+DETAILED MODEL ANALYSIS
+================================================================================
+
+GPT:
+  Status: ✅ PASSED
+  Attempt: #1
+  Approach: mixed (comprehensions + loops)
+  Structure:
+    - Lines of code: 19
+    - Functions: 2
+    - Loops: 5
+    - Conditionals: 2
+    - Comprehensions: 4
+    - Has docstring: True
+    - Comment lines: 4
+  Variable Naming:
+    - Total variables: 4
+    - Descriptive: 4 (100.0%)
+    - Avg length: 6.0 chars
+
+GEMINI:
+  Status: ❌ FAILED
+  Attempt: #1
+  Approach: mixed (comprehensions + loops)
+  Structure:
+    - Lines of code: 7
+    - Functions: 1
+    - Loops: 2
+    - Conditionals: 1
+    - Comprehensions: 2
+    - Has docstring: True
+    - Comment lines: 0
+  Variable Naming:
+    - Total variables: 2
+    - Descriptive: 2 (100.0%)
+    - Avg length: 6.0 chars
+  Error:
+    - Type: name_error
+    - Message: Traceback (most recent call last):
+  File "C:\Users\culli\AppData\Local\Temp\tmptszcu4yv.py", line 2...
+
+LLAMA:
+  Status: ✅ PASSED
+  Attempt: #1
+  Approach: mixed (comprehensions + loops)
+  Structure:
+    - Lines of code: 18
+    - Functions: 2
+    - Loops: 4
+    - Conditionals: 2
+    - Comprehensions: 4
+    - Has docstring: True
+    - Comment lines: 4
+  Variable Naming:
+    - Total variables: 4
+    - Descriptive: 4 (100.0%)
+    - Avg length: 6.0 chars
+
+QWEN:
+  Status: ❌ FAILED
+  Attempt: #1
+  Approach: mixed (comprehensions + loops)
+  Structure:
+    - Lines of code: 3
+    - Functions: 0
+    - Loops: 2
+    - Conditionals: 1
+    - Comprehensions: 1
+    - Has docstring: False
+    - Comment lines: 0
+  Variable Naming:
+    - Total variables: 2
+    - Descriptive: 2 (100.0%)
+    - Avg length: 6.0 chars
+  Error:
+    - Type: syntax_error
+    - Message: SyntaxError: '[' was never closed at line 3...
+
+================================================================================
+INSIGHTS
+================================================================================
+
+✅ Successful approach: mixed (comprehensions + loops) (used by gpt, llama)
+❌ Common error: name_error (in gemini, qwen)
+
+Quality Ranking:
+  1. GPT: 138.0 points
+  2. LLAMA: 138.0 points
+  3. GEMINI: 35.0 points
+  4. QWEN: 10.0 points
+
+
+
+================================================================================
+QUALITATIVE ANALYSIS: humaneval_055
+================================================================================
+
+Difficulty: hard
+Category: algorithms
+
+================================================================================
+APPROACHES COMPARISON
+================================================================================
+
+RECURSIVE: gpt, gemini, llama
+ITERATIVE: qwen
+
+================================================================================
+DETAILED MODEL ANALYSIS
+================================================================================
+
+GPT:
+  Status: ✅ PASSED
+  Attempt: #1
+  Approach: recursive
+  Structure:
+    - Lines of code: 25
+    - Functions: 2
+    - Loops: 4
+    - Conditionals: 4
+    - Comprehensions: 0
+    - Has docstring: False
+    - Comment lines: 0
+  Variable Naming:
+    - Total variables: 9
+    - Descriptive: 8 (88.9%)
+    - Avg length: 6.8 chars
+
+GEMINI:
+  Status: ❌ FAILED
+  Attempt: #1
+  Approach: recursive
+  Structure:
+    - Lines of code: 33
+    - Functions: 0
+    - Loops: 4
+    - Conditionals: 4
+    - Comprehensions: 0
+    - Has docstring: False
+    - Comment lines: 3
+  Variable Naming:
+    - Total variables: 9
+    - Descriptive: 7 (77.8%)
+    - Avg length: 8.0 chars
+  Error:
+    - Type: syntax_error
+    - Message: SyntaxError: invalid syntax at line 42...
+
+LLAMA:
+  Status: ❌ FAILED
+  Attempt: #1
+  Approach: recursive
+  Structure:
+    - Lines of code: 56
+    - Functions: 3
+    - Loops: 8
+    - Conditionals: 6
+    - Comprehensions: 0
+    - Has docstring: True
+    - Comment lines: 0
+  Variable Naming:
+    - Total variables: 13
+    - Descriptive: 10 (76.9%)
+    - Avg length: 5.2 chars
+  Error:
+    - Type: assertion_error
+    - Message: Traceback (most recent call last):
+  File "C:\Users\culli\AppData\Local\Temp\tmpdbjl8tbf.py", line 8...
+
+QWEN:
+  Status: ❌ FAILED
+  Attempt: #1
+  Approach: iterative
+  Structure:
+    - Lines of code: 18
+    - Functions: 0
+    - Loops: 14
+    - Conditionals: 1
+    - Comprehensions: 0
+    - Has docstring: False
+    - Comment lines: 0
+  Variable Naming:
+    - Total variables: 3
+    - Descriptive: 0 (0.0%)
+    - Avg length: 1.0 chars
+  Error:
+    - Type: syntax_error
+    - Message: SyntaxError: invalid character '²' (U+00B2) at line 4...
+
+================================================================================
+INSIGHTS
+================================================================================
+
+✅ Successful approach: recursive (used by gpt)
+❌ Common error: syntax_error (in gemini, llama, qwen)
+
+Quality Ranking:
+  1. GPT: 128.9 points
+  2. LLAMA: 32.7 points
+  3. GEMINI: 10.8 points
+  4. QWEN: 0.0 points
+
+
+
+================================================================================
+QUALITATIVE ANALYSIS: humaneval_049
+================================================================================
+
+Difficulty: hard
+Category: lists
+
+================================================================================
+APPROACHES COMPARISON
+================================================================================
+
+RECURSIVE: gpt, gemini, llama
+ITERATIVE: qwen
+
+================================================================================
+DETAILED MODEL ANALYSIS
+================================================================================
+
+GPT:
+  Status: ✅ PASSED
+  Attempt: #1
+  Approach: recursive
+  Structure:
+    - Lines of code: 16
+    - Functions: 1
+    - Loops: 1
+    - Conditionals: 1
+    - Comprehensions: 0
+    - Has docstring: True
+    - Comment lines: 0
+  Variable Naming:
+    - Total variables: 2
+    - Descriptive: 1 (50.0%)
+    - Avg length: 4.0 chars
+
+GEMINI:
+  Status: ✅ PASSED
+  Attempt: #1
+  Approach: recursive
+  Structure:
+    - Lines of code: 16
+    - Functions: 1
+    - Loops: 1
+    - Conditionals: 1
+    - Comprehensions: 0
+    - Has docstring: True
+    - Comment lines: 0
+  Variable Naming:
+    - Total variables: 2
+    - Descriptive: 1 (50.0%)
+    - Avg length: 4.0 chars
+
+LLAMA:
+  Status: ❌ FAILED
+  Attempt: #1
+  Approach: recursive
+  Structure:
+    - Lines of code: 14
+    - Functions: 1
+    - Loops: 1
+    - Conditionals: 0
+    - Comprehensions: 0
+    - Has docstring: True
+    - Comment lines: 0
+  Variable Naming:
+    - Total variables: 2
+    - Descriptive: 2 (100.0%)
+    - Avg length: 7.0 chars
+  Error:
+    - Type: assertion_error
+    - Message: Traceback (most recent call last):
+  File "C:\Users\culli\AppData\Local\Temp\tmpomf5u8bg.py", line 3...
+
+QWEN:
+  Status: ❌ FAILED
+  Attempt: #1
+  Approach: iterative
+  Structure:
+    - Lines of code: 8
+    - Functions: 1
+    - Loops: 1
+    - Conditionals: 1
+    - Comprehensions: 0
+    - Has docstring: False
+    - Comment lines: 0
+  Variable Naming:
+    - Total variables: 2
+    - Descriptive: 1 (50.0%)
+    - Avg length: 3.0 chars
+  Error:
+    - Type: name_error
+    - Message: Traceback (most recent call last):
+  File "C:\Users\culli\AppData\Local\Temp\tmphrmj237i.py", line 9...
+
+================================================================================
+INSIGHTS
+================================================================================
+
+✅ Successful approach: recursive (used by gpt, gemini)
+❌ Common error: assertion_error (in llama, qwen)
+
+Quality Ranking:
+  1. GPT: 130.0 points
+  2. GEMINI: 130.0 points
+  3. LLAMA: 35.0 points
+  4. QWEN: 25.0 points
+
+
+
+================================================================================
+QUALITATIVE ANALYSIS: humaneval_053
+================================================================================
+
+Difficulty: hard
+Category: math
+
+================================================================================
+APPROACHES COMPARISON
+================================================================================
+
+RECURSIVE: gpt, gemini, llama
+MIXED (COMPREHENSIONS + LOOPS): qwen
+
+================================================================================
+DETAILED MODEL ANALYSIS
+================================================================================
+
+GPT:
+  Status: ❌ FAILED
+  Attempt: #1
+  Approach: recursive
+  Structure:
+    - Lines of code: 22
+    - Functions: 2
+    - Loops: 1
+    - Conditionals: 8
+    - Comprehensions: 0
+    - Has docstring: True
+    - Comment lines: 4
+  Variable Naming:
+    - Total variables: 6
+    - Descriptive: 5 (83.3%)
+    - Avg length: 10.3 chars
+  Error:
+    - Type: assertion_error
+    - Message: Traceback (most recent call last):
+  File "C:\Users\culli\AppData\Local\Temp\tmpnzp8mddx.py", line 4...
+
+GEMINI:
+  Status: ❌ FAILED
+  Attempt: #1
+  Approach: recursive
+  Structure:
+    - Lines of code: 35
+    - Functions: 1
+    - Loops: 1
+    - Conditionals: 5
+    - Comprehensions: 0
+    - Has docstring: True
+    - Comment lines: 4
+  Variable Naming:
+    - Total variables: 7
+    - Descriptive: 6 (85.7%)
+    - Avg length: 10.0 chars
+  Error:
+    - Type: assertion_error
+    - Message: Traceback (most recent call last):
+  File "C:\Users\culli\AppData\Local\Temp\tmprrf9j0j2.py", line 6...
+
+LLAMA:
+  Status: ❌ FAILED
+  Attempt: #1
+  Approach: recursive
+  Structure:
+    - Lines of code: 29
+    - Functions: 2
+    - Loops: 1
+    - Conditionals: 7
+    - Comprehensions: 0
+    - Has docstring: True
+    - Comment lines: 4
+  Variable Naming:
+    - Total variables: 4
+    - Descriptive: 2 (50.0%)
+    - Avg length: 3.8 chars
+  Error:
+    - Type: assertion_error
+    - Message: Traceback (most recent call last):
+  File "C:\Users\culli\AppData\Local\Temp\tmpjdao9m6z.py", line 5...
+
+QWEN:
+  Status: ❌ FAILED
+  Attempt: #1
+  Approach: mixed (comprehensions + loops)
+  Structure:
+    - Lines of code: 8
+    - Functions: 0
+    - Loops: 9
+    - Conditionals: 10
+    - Comprehensions: 1
+    - Has docstring: False
+    - Comment lines: 0
+  Error:
+    - Type: syntax_error
+    - Message: SyntaxError: unterminated string literal (detected at line 6) at line 6...
+
+================================================================================
+INSIGHTS
+================================================================================
+
+❌ Common error: assertion_error (in gpt, gemini, llama, qwen)
+
+Quality Ranking:
+  1. GEMINI: 36.6 points
+  2. GPT: 36.3 points
+  3. LLAMA: 33.0 points
+  4. QWEN: 0.0 points

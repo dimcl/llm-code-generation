@@ -1,0 +1,28 @@
+{
+  "llama": {
+    "assertion_error": 57,
+    "success": 189,
+    "syntax_error": 50,
+    "index_error": 2,
+    "name_error": 1,
+    "type_error": 1
+  },
+  "qwen": {
+    "syntax_error": 253,
+    "success": 39,
+    "assertion_error": 6,
+    "name_error": 2
+  },
+  "gpt": {
+    "success": 234,
+    "assertion_error": 15,
+    "syntax_error": 50,
+    "value_error": 1
+  },
+  "gemini": {
+    "success": 210,
+    "syntax_error": 80,
+    "name_error": 5,
+    "assertion_error": 5
+  }
+}

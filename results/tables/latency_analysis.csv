@@ -1,0 +1,5 @@
+Modello,Latency Media (s),Latency Mediana (s),Std Dev (s),Latency Totale (s),Latency Totale (min)
+GPT,2.50,2.24,1.14,749.1,12.5
+GEMINI,6.17,1.27,19.33,1849.7,30.8
+LLAMA,0.40,0.37,0.15,120.9,2.0
+QWEN,3.23,3.48,0.86,969.9,16.2

@@ -1,0 +1,311 @@
+{
+  "generated_at": "2025-10-31T17:00:00",
+  "analyses": [
+    {
+      "problem_id": "humaneval_010",
+      "difficulty": "easy",
+      "category": "math",
+      "comparison": {
+        "gpt": {
+          "success": true,
+          "attempt_number": 1,
+          "code_lines": 17,
+          "code_length": 612,
+          "has_comments": false,
+          "has_docstring": true,
+          "error_type": null,
+          "execution_time": 0.08499884605407715,
+          "tokens_used": 298
+        },
+        "gemini": {
+          "success": true,
+          "attempt_number": 1,
+          "code_lines": 17,
+          "code_length": 572,
+          "has_comments": false,
+          "has_docstring": true,
+          "error_type": null,
+          "execution_time": 0.3019866943359375,
+          "tokens_used": 271
+        },
+        "llama": {
+          "success": true,
+          "attempt_number": 1,
+          "code_lines": 14,
+          "code_length": 507,
+          "has_comments": false,
+          "has_docstring": true,
+          "error_type": null,
+          "execution_time": 0.08877897262573242,
+          "tokens_used": 292
+        },
+        "qwen": {
+          "success": true,
+          "attempt_number": 1,
+          "code_lines": 5,
+          "code_length": 157,
+          "has_comments": false,
+          "has_docstring": false,
+          "error_type": null,
+          "execution_time": 0.08232951164245605,
+          "tokens_used": 795
+        }
+      }
+    },
+    {
+      "problem_id": "humaneval_005",
+      "difficulty": "easy",
+      "category": "lists",
+      "comparison": {
+        "gpt": {
+          "success": true,
+          "attempt_number": 1,
+          "code_lines": 14,
+          "code_length": 501,
+          "has_comments": false,
+          "has_docstring": true,
+          "error_type": null,
+          "execution_time": 0.08482837677001953,
+          "tokens_used": 337
+        },
+        "gemini": {
+          "success": true,
+          "attempt_number": 1,
+          "code_lines": 14,
+          "code_length": 495,
+          "has_comments": false,
+          "has_docstring": true,
+          "error_type": null,
+          "execution_time": 0.2585103511810303,
+          "tokens_used": 248
+        },
+        "llama": {
+          "success": true,
+          "attempt_number": 1,
+          "code_lines": 17,
+          "code_length": 678,
+          "has_comments": false,
+          "has_docstring": true,
+          "error_type": null,
+          "execution_time": 0.09006762504577637,
+          "tokens_used": 349
+        },
+        "qwen": {
+          "success": false,
+          "attempt_number": 1,
+          "code_lines": 18,
+          "code_length": 3881,
+          "has_comments": false,
+          "has_docstring": false,
+          "error_type": "syntax_error",
+          "execution_time": 0.0,
+          "tokens_used": 1209
+        }
+      }
+    },
+    {
+      "problem_id": "humaneval_020",
+      "difficulty": "medium",
+      "category": "strings",
+      "comparison": {
+        "gpt": {
+          "success": true,
+          "attempt_number": 1,
+          "code_lines": 19,
+          "code_length": 874,
+          "has_comments": true,
+          "has_docstring": true,
+          "error_type": null,
+          "execution_time": 0.07485842704772949,
+          "tokens_used": 466
+        },
+        "gemini": {
+          "success": false,
+          "attempt_number": 1,
+          "code_lines": 7,
+          "code_length": 331,
+          "has_comments": false,
+          "has_docstring": true,
+          "error_type": "name_error",
+          "execution_time": 0.3681173324584961,
+          "tokens_used": 260
+        },
+        "llama": {
+          "success": true,
+          "attempt_number": 1,
+          "code_lines": 18,
+          "code_length": 878,
+          "has_comments": true,
+          "has_docstring": true,
+          "error_type": null,
+          "execution_time": 0.07450032234191895,
+          "tokens_used": 485
+        },
+        "qwen": {
+          "success": false,
+          "attempt_number": 1,
+          "code_lines": 3,
+          "code_length": 191,
+          "has_comments": false,
+          "has_docstring": false,
+          "error_type": "syntax_error",
+          "execution_time": 0.0,
+          "tokens_used": 1243
+        }
+      }
+    },
+    {
+      "problem_id": "humaneval_055",
+      "difficulty": "hard",
+      "category": "algorithms",
+      "comparison": {
+        "gpt": {
+          "success": true,
+          "attempt_number": 1,
+          "code_lines": 25,
+          "code_length": 945,
+          "has_comments": false,
+          "has_docstring": false,
+          "error_type": null,
+          "execution_time": 6.046735525131226,
+          "tokens_used": 686
+        },
+        "gemini": {
+          "success": false,
+          "attempt_number": 1,
+          "code_lines": 33,
+          "code_length": 1305,
+          "has_comments": true,
+          "has_docstring": false,
+          "error_type": "syntax_error",
+          "execution_time": 0.0,
+          "tokens_used": 697
+        },
+        "llama": {
+          "success": false,
+          "attempt_number": 1,
+          "code_lines": 56,
+          "code_length": 2479,
+          "has_comments": false,
+          "has_docstring": true,
+          "error_type": "assertion_error",
+          "execution_time": 0.11203837394714355,
+          "tokens_used": 1156
+        },
+        "qwen": {
+          "success": false,
+          "attempt_number": 1,
+          "code_lines": 18,
+          "code_length": 4389,
+          "has_comments": false,
+          "has_docstring": false,
+          "error_type": "syntax_error",
+          "execution_time": 0.0,
+          "tokens_used": 1480
+        }
+      }
+    },
+    {
+      "problem_id": "humaneval_049",
+      "difficulty": "hard",
+      "category": "lists",
+      "comparison": {
+        "gpt": {
+          "success": true,
+          "attempt_number": 1,
+          "code_lines": 16,
+          "code_length": 614,
+          "has_comments": false,
+          "has_docstring": true,
+          "error_type": null,
+          "execution_time": 0.06209254264831543,
+          "tokens_used": 407
+        },
+        "gemini": {
+          "success": true,
+          "attempt_number": 1,
+          "code_lines": 16,
+          "code_length": 612,
+          "has_comments": false,
+          "has_docstring": true,
+          "error_type": null,
+          "execution_time": 0.1866288185119629,
+          "tokens_used": 304
+        },
+        "llama": {
+          "success": false,
+          "attempt_number": 1,
+          "code_lines": 14,
+          "code_length": 616,
+          "has_comments": false,
+          "has_docstring": true,
+          "error_type": "assertion_error",
+          "execution_time": 0.10736632347106934,
+          "tokens_used": 422
+        },
+        "qwen": {
+          "success": false,
+          "attempt_number": 1,
+          "code_lines": 8,
+          "code_length": 166,
+          "has_comments": false,
+          "has_docstring": false,
+          "error_type": "name_error",
+          "execution_time": 0.11469650268554688,
+          "tokens_used": 1241
+        }
+      }
+    },
+    {
+      "problem_id": "humaneval_053",
+      "difficulty": "hard",
+      "category": "math",
+      "comparison": {
+        "gpt": {
+          "success": false,
+          "attempt_number": 1,
+          "code_lines": 22,
+          "code_length": 836,
+          "has_comments": true,
+          "has_docstring": true,
+          "error_type": "assertion_error",
+          "execution_time": 0.11036229133605957,
+          "tokens_used": 517
+        },
+        "gemini": {
+          "success": false,
+          "attempt_number": 1,
+          "code_lines": 35,
+          "code_length": 1565,
+          "has_comments": true,
+          "has_docstring": true,
+          "error_type": "assertion_error",
+          "execution_time": 0.16573119163513184,
+          "tokens_used": 658
+        },
+        "llama": {
+          "success": false,
+          "attempt_number": 1,
+          "code_lines": 29,
+          "code_length": 988,
+          "has_comments": true,
+          "has_docstring": true,
+          "error_type": "assertion_error",
+          "execution_time": 0.11173176765441895,
+          "tokens_used": 572
+        },
+        "qwen": {
+          "success": false,
+          "attempt_number": 1,
+          "code_lines": 8,
+          "code_length": 3784,
+          "has_comments": false,
+          "has_docstring": false,
+          "error_type": "syntax_error",
+          "execution_time": 0.0,
+          "tokens_used": 1337
+        }
+      }
+    }
+  ]
+}

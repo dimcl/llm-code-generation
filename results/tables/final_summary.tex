@@ -1,0 +1,14 @@
+\begin{table}
+\caption{Comprehensive Results Summary}
+\label{tab:final_summary}
+\begin{tabular}{lllllllllllrrr}
+\toprule
+Model & Pass@1 (%) & Pass@3 (%) & Pass@5 (%) & Problems Solved & Avg Cyclomatic & Avg Maintainability & Avg Tokens & Avg Latency (s) & Total Cost ($) & Cost per Success ($) & Total Errors & Syntax Errors & Runtime Errors \\
+\midrule
+GPT-4o-mini & 78.3 & 80.0 & 80.0 & 47/60 & 3.3 & 0.0 & 356 & 2.50 & 0.0408 & 0.0002 & 66 & 50 & 16 \\
+Gemini 2.5 Flash & 68.3 & 75.0 & 75.0 & 41/60 & 3.6 & 0.0 & 360 & 6.17 & 0.1545 & 0.0007 & 90 & 80 & 5 \\
+Llama 3.3 70B & 65.0 & 71.7 & 73.3 & 39/60 & 2.9 & 0.0 & 394 & 0.40 & 0.0077 & 0.0000 & 111 & 50 & 57 \\
+Qwen 2.5 Coder 32B & 16.7 & 21.7 & 26.7 & 10/60 & 2.2 & 0.0 & 1182 & 3.23 & 0.0267 & 0.0007 & 261 & 253 & 6 \\
+\bottomrule
+\end{tabular}
+\end{table}

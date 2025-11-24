@@ -1,0 +1,116 @@
+# Configuration file for LLM Code Generation experiments
+# Final configuration: 4 models (Gemini, Llama, Qwen, GPT-4o-mini via Azure)
+
+# API Configuration
+api:
+  azure_openai:
+    # Azure OpenAI Service (GPT-4o-mini)
+    endpoint: ""  # Set from .env: AZURE_OPENAI_ENDPOINT
+    api_key: ""   # Set from .env: AZURE_OPENAI_KEY
+    deployment_name: "gpt-4o-mini"
+    api_version: "2024-08-01-preview"
+    temperature: 0.2
+    max_tokens: 1024
+    timeout: 60
+  
+  google:
+    # Google Gemini 2.0 Flash
+    model: "gemini-2.0-flash-exp"
+    temperature: 0.2
+    max_tokens: 1024
+    timeout: 60
+  
+  groq:
+    # Groq API for Llama and Qwen
+    llama_model: "llama-3.1-8b-instant"  # Meta Llama 3.1 8B
+    qwen_model: "qwen/qwen3-32b"  # Alibaba Qwen 3 32B
+    temperature: 0.2
+    max_tokens: 1024
+    timeout: 60
+
+# Experiment Configuration
+experiment:
+  k_generations: 5  # for Pass@k metric
+  problems_per_batch: 10
+  retry_on_error: 3
+  save_intermediate: true
+  
+  prompt_templates:
+    - "basic"           # Solo descrizione problema
+    - "few_shot"        # Con esempi
+    - "chain_of_thought"  # Con ragionamento step-by-step
+
+# Dataset Configuration
+dataset:
+  humaneval_path: "./code/data/humaneval"
+  mbpp_path: "./code/data/mbpp"
+  selected_problems_path: "./code/data/selected_problems"
+  
+  selection_criteria:
+    total_problems: 45
+    easy: 15
+    medium: 20
+    hard: 10
+    
+  categories:
+    - "data_manipulation"
+    - "algorithms"
+    - "logic_math"
+    - "recursion"
+
+# Evaluation Configuration
+evaluation:
+  sandbox:
+    type: "subprocess"  # or "docker"
+    timeout_seconds: 10
+    memory_limit_mb: 512
+  
+  metrics:
+    correctness:
+      - "pass_at_1"
+      - "pass_at_3"
+      - "pass_at_5"
+      - "test_success_rate"
+      - "syntax_error_rate"
+      - "runtime_error_rate"
+    
+    quality:
+      - "cyclomatic_complexity"
+      - "cognitive_complexity"
+      - "maintainability_index"
+      - "halstead_difficulty"
+      - "halstead_effort"
+      - "loc"
+    
+    cost:
+      - "total_tokens"
+      - "cost_usd"
+      - "time_seconds"
+
+# Analysis Configuration
+analysis:
+  statistical_tests:
+    significance_level: 0.05
+    tests:
+      - "t_test"
+      - "anova"
+      - "wilcoxon"
+  
+  visualizations:
+    format: "png"
+    dpi: 300
+    style: "seaborn-v0_8-darkgrid"
+
+# Paths
+paths:
+  results: "./results"
+  figures: "./results/figures"
+  tables: "./results/tables"
+  logs: "./logs"
+  cache: "./.cache"
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "./logs/experiment.log"

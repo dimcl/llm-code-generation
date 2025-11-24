@@ -1,0 +1,173 @@
+{
+  "alpha": 0.05,
+  "n_groups": 4,
+  "group_names": [
+    "gpt",
+    "gemini",
+    "llama",
+    "qwen"
+  ],
+  "n_observations_per_group": [
+    60,
+    60,
+    60,
+    60
+  ],
+  "normality_tests": {
+    "gpt": {
+      "test": "Shapiro-Wilk",
+      "statistic": 0.5344211354126955,
+      "p_value": 1.6474212568470085e-12,
+      "is_normal": false,
+      "alpha": 0.05
+    },
+    "gemini": {
+      "test": "Shapiro-Wilk",
+      "statistic": 0.6523604254437572,
+      "p_value": 1.1875292525399672e-10,
+      "is_normal": false,
+      "alpha": 0.05
+    },
+    "llama": {
+      "test": "Shapiro-Wilk",
+      "statistic": 0.7089790236170355,
+      "p_value": 1.3267432707560886e-09,
+      "is_normal": false,
+      "alpha": 0.05
+    },
+    "qwen": {
+      "test": "Shapiro-Wilk",
+      "statistic": 0.5736188120152702,
+      "p_value": 6.2216383679747256e-12,
+      "is_normal": false,
+      "alpha": 0.05
+    }
+  },
+  "all_normal": false,
+  "homogeneity_test": {
+    "test": "Levene",
+    "statistic": 4.1821795296455795,
+    "p_value": 0.006573607076381068,
+    "is_homogeneous": false,
+    "alpha": 0.05
+  },
+  "primary_test": {
+    "test": "Kruskal-Wallis",
+    "h_statistic": 72.36091148749776,
+    "p_value": 1.3322994307728193e-15,
+    "is_significant": true,
+    "alpha": 0.05,
+    "groups": {
+      "gpt": {
+        "median": 1.0,
+        "n": 60
+      },
+      "gemini": {
+        "median": 1.0,
+        "n": 60
+      },
+      "llama": {
+        "median": 1.0,
+        "n": 60
+      },
+      "qwen": {
+        "median": 0.0,
+        "n": 60
+      }
+    },
+    "interpretation": "Le differenze tra i modelli sono statisticamente significative (p=0.0000, α=0.05)"
+  },
+  "post_hoc": {
+    "test": "Mann-Whitney U (pairwise)",
+    "alpha": 0.05,
+    "correction": "Bonferroni",
+    "comparisons": [
+      {
+        "group1": "gpt",
+        "group2": "gemini",
+        "u_statistic": 2038.0,
+        "p_value": 0.13087382037269488,
+        "p_corrected": 0.7852429222361692,
+        "significant": false
+      },
+      {
+        "group1": "gpt",
+        "group2": "llama",
+        "u_statistic": 2147.0,
+        "p_value": 0.032445749995156405,
+        "p_corrected": 0.19467449997093844,
+        "significant": false
+      },
+      {
+        "group1": "gpt",
+        "group2": "qwen",
+        "u_statistic": 3103.5,
+        "p_value": 9.054673485456061e-14,
+        "p_corrected": 5.432804091273636e-13,
+        "significant": true
+      },
+      {
+        "group1": "gemini",
+        "group2": "llama",
+        "u_statistic": 1925.5,
+        "p_value": 0.46335608717929133,
+        "p_corrected": 1.0,
+        "significant": false
+      },
+      {
+        "group1": "gemini",
+        "group2": "qwen",
+        "u_statistic": 2969.5,
+        "p_value": 2.932177355680904e-11,
+        "p_corrected": 1.7593064134085423e-10,
+        "significant": true
+      },
+      {
+        "group1": "llama",
+        "group2": "qwen",
+        "u_statistic": 2880.5,
+        "p_value": 8.441231920253519e-10,
+        "p_corrected": 5.064739152152111e-09,
+        "significant": true
+      }
+    ]
+  },
+  "effect_sizes": [
+    {
+      "group1": "gpt",
+      "group2": "gemini",
+      "cohens_d": 0.1912088009927158,
+      "magnitude": "trascurabile"
+    },
+    {
+      "group1": "gpt",
+      "group2": "llama",
+      "cohens_d": 0.3515563174440075,
+      "magnitude": "piccolo"
+    },
+    {
+      "group1": "gpt",
+      "group2": "qwen",
+      "cohens_d": 1.906099874679911,
+      "magnitude": "grande"
+    },
+    {
+      "group1": "gemini",
+      "group2": "llama",
+      "cohens_d": 0.160283894586909,
+      "magnitude": "trascurabile"
+    },
+    {
+      "group1": "gemini",
+      "group2": "qwen",
+      "cohens_d": 1.6124221094363131,
+      "magnitude": "grande"
+    },
+    {
+      "group1": "llama",
+      "group2": "qwen",
+      "cohens_d": 1.3763814488098105,
+      "magnitude": "grande"
+    }
+  ]
+}

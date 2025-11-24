@@ -1,0 +1,170 @@
+{
+  "gpt": {
+    "total_analyzed": 234,
+    "approaches": {
+      "recursive": {
+        "count": 49,
+        "percentage": 20.94
+      },
+      "functional": {
+        "count": 10,
+        "percentage": 4.27
+      },
+      "mixed": {
+        "count": 53,
+        "percentage": 22.65
+      },
+      "iterative": {
+        "count": 75,
+        "percentage": 32.05
+      },
+      "conditional": {
+        "count": 13,
+        "percentage": 5.56
+      },
+      "direct": {
+        "count": 34,
+        "percentage": 14.53
+      }
+    },
+    "aggregated": {
+      "iterative_explicit": {
+        "count": 75,
+        "percentage": 32.1
+      },
+      "functional_concise": {
+        "count": 63,
+        "percentage": 26.9
+      },
+      "recursive": {
+        "count": 49,
+        "percentage": 20.9
+      }
+    }
+  },
+  "gemini": {
+    "total_analyzed": 210,
+    "approaches": {
+      "recursive": {
+        "count": 92,
+        "percentage": 43.81
+      },
+      "mixed": {
+        "count": 24,
+        "percentage": 11.43
+      },
+      "iterative": {
+        "count": 84,
+        "percentage": 40.0
+      },
+      "conditional": {
+        "count": 5,
+        "percentage": 2.38
+      },
+      "direct": {
+        "count": 5,
+        "percentage": 2.38
+      }
+    },
+    "aggregated": {
+      "iterative_explicit": {
+        "count": 84,
+        "percentage": 40.0
+      },
+      "functional_concise": {
+        "count": 24,
+        "percentage": 11.4
+      },
+      "recursive": {
+        "count": 92,
+        "percentage": 43.8
+      }
+    }
+  },
+  "llama": {
+    "total_analyzed": 189,
+    "approaches": {
+      "recursive": {
+        "count": 34,
+        "percentage": 17.99
+      },
+      "functional": {
+        "count": 20,
+        "percentage": 10.58
+      },
+      "mixed": {
+        "count": 36,
+        "percentage": 19.05
+      },
+      "iterative": {
+        "count": 66,
+        "percentage": 34.92
+      },
+      "conditional": {
+        "count": 18,
+        "percentage": 9.52
+      },
+      "direct": {
+        "count": 15,
+        "percentage": 7.94
+      }
+    },
+    "aggregated": {
+      "iterative_explicit": {
+        "count": 66,
+        "percentage": 34.9
+      },
+      "functional_concise": {
+        "count": 56,
+        "percentage": 29.6
+      },
+      "recursive": {
+        "count": 34,
+        "percentage": 18.0
+      }
+    }
+  },
+  "qwen": {
+    "total_analyzed": 39,
+    "approaches": {
+      "recursive": {
+        "count": 2,
+        "percentage": 5.13
+      },
+      "functional": {
+        "count": 1,
+        "percentage": 2.56
+      },
+      "mixed": {
+        "count": 11,
+        "percentage": 28.21
+      },
+      "iterative": {
+        "count": 12,
+        "percentage": 30.77
+      },
+      "conditional": {
+        "count": 4,
+        "percentage": 10.26
+      },
+      "direct": {
+        "count": 9,
+        "percentage": 23.08
+      }
+    },
+    "aggregated": {
+      "iterative_explicit": {
+        "count": 12,
+        "percentage": 30.8
+      },
+      "functional_concise": {
+        "count": 12,
+        "percentage": 30.8
+      },
+      "recursive": {
+        "count": 2,
+        "percentage": 5.1
+      }
+    }
+  }
+}
