@@ -33,9 +33,6 @@ PIANO_AZIONE.md
 # Project specific - Analisi preliminari non necessarie
 src/data/analyze_problem_count.py
 
-# Project specific - Figure (possono essere rigenerate)
-results/figures/
-
 # Optional: Raw outputs (sono molto pesanti, ma potrebbero essere utili)
 # Se vuoi includerli per riproducibilità, commenta questa riga:
 # results/raw_outputs/
